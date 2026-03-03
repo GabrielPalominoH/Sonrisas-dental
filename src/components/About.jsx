@@ -51,8 +51,9 @@ export default function About() {
               <CardBody className="p-0">
                 <img
                   src={aboutContent.image}
-                  alt="Nuestro equipo"
+                  alt="Equipo profesional de Clínica Dental Sonrisa Perfecta"
                   className="w-full h-80 object-cover rounded-lg"
+                  loading="lazy"
                 />
               </CardBody>
             </Card>

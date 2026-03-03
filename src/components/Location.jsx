@@ -33,8 +33,9 @@ export default function Location() {
               <CardBody className="p-0">
                 <img
                   src={locationContent.image}
-                  alt="Nuestra clínica"
+                  alt="Instalaciones de Clínica Dental Sonrisa Perfecta"
                   className="w-full h-80 object-cover rounded-lg"
+                  loading="lazy"
                 />
               </CardBody>
             </Card>

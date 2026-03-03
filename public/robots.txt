@@ -1,0 +1,26 @@
+# Robots.txt para Clínica Dental Sonrisa Perfecta
+# https://sonrisasperfecta.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sonrisasperfecta.com/sitemap.xml
+
+# Archivos disallowed
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.jsx$
+
+# Reglas específicas para motores de búsqueda
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /

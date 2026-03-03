@@ -25,8 +25,9 @@ export default function Contact() {
         >
           <img
             src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80"
-            alt="Consultorio dental"
+            alt="Interior moderno de consultorio dental de Clínica Dental Sonrisa Perfecta"
             className="absolute inset-0 w-full h-full object-cover zoom-out-animation"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-primary-900/50"></div>
           

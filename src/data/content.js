@@ -134,5 +134,5 @@ export const footerContent = {
     { label: "Instagram", href: "#" },
     { label: "Twitter", href: "#" },
   ],
-  copyright: "© 2024 Clínica Dental Sonrisa Perfecta. Todos los derechos reservados.",
+  copyright: "© 2026 Clínica Dental Sonrisa Perfecta. Todos los derechos reservados.",
 };

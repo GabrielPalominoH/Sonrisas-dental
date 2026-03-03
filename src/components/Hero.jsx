@@ -8,6 +8,13 @@ export default function Hero() {
   const images = heroContent.images;
 
   useEffect(() => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [images]);
+
+  useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
     }, 5000);
@@ -20,20 +27,23 @@ export default function Hero() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="wait">
+      <div className="absolute inset-0 z-0 bg-gray-900">
+        <AnimatePresence initial={false} mode="sync">
           <motion.img
             key={currentIndex}
             src={images[currentIndex]}
             alt={`Clínica Dental ${currentIndex + 1}`}
             className="w-full h-full object-cover absolute inset-0"
-            initial={{ opacity: 0, scale: 1.3 }}
+            initial={{ opacity: 0, scale: 1.15 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 4 }}
+            transition={{
+              opacity: { duration: 1.2, ease: "easeInOut" },
+              scale: { duration: 5, ease: "easeOut" },
+            }}
           />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 to-primary-600/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-900/50 to-primary-600/30" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-20">

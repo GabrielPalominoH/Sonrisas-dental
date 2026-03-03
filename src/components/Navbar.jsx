@@ -37,8 +37,10 @@ export default function AppNavbar() {
           >
             <img
               src="/image/Logo-Dent.png"
-              alt="Logo"
+              alt="Clínica Dental Sonrisa Perfecta - Logo"
               className="h-14 w-auto"
+              width="56"
+              height="56"
             />
           </motion.div>
         </NavbarBrand>
