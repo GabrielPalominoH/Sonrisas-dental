@@ -20,7 +20,6 @@ export const heroContent = {
     "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&q=80",
     "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=1200&q=80",
     "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1200&q=80",
-    "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&q=80",
   ],
 };
 
