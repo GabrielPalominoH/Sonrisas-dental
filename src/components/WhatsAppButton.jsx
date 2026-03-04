@@ -1,7 +1,9 @@
 import { Button } from "@heroui/react";
 
 export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/";
+  const phoneNumber = "51925456880";
+  const message = "Hola, quiero hacer una consulta por...";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <a
